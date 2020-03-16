@@ -95,7 +95,7 @@ void vector_delete(vector *v, int index) {
     v->val_array[index] == NULL;
 
     int i = index;
-    while(i <= v->size-1) {
+    while(i < v->size) {
         v->val_array[i] = v->val_array[i+1];
         v->val_array[i+1] = NULL;
 
